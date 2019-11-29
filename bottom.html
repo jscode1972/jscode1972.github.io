@@ -30,11 +30,11 @@
     
 <div id="nav">
   <ul>
-    <li><a href="#">系統說明</a></li>
-    <li><a href="#">下載專區</a></li>
-    <li><a href="#">系統維護</a></li>
-    <li><a href="#">更新紀錄</a></li>
-    <li><a href="#">聯絡方式</a></li>
+    <li><a href="#" value="s">系統說明</a></li>
+    <li><a href="#" value="d">下載專區</a></li>
+    <li><a href="#" value="m">資料維護</a></li>
+    <li><a href="#" value="h">更新紀錄</a></li>
+    <li><a href="#" value="c">聯絡方式</a></li>
   </h1>
 </div> <!-- nav end -->
     
@@ -72,6 +72,7 @@
       $("#nav li a").removeClass("selected")
       $(this).addClass("selected");
       alert(this.val()); 
+      alert(this.text()); 
     });
   });
 </script>
