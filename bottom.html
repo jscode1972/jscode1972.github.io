@@ -15,6 +15,10 @@
   
   <title>Title of the document</title>
   <link rel="stylesheet" type="text/css" href="css/footer_at_bottom.css?2019222232w233" >
+    
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous">
+  </script>
 </head>
 <body>
   
@@ -49,6 +53,14 @@
 </footer> <!-- footer end -->
 
 </div> <!-- wrapper end -->
+  
+<script type="text/javascript">        
+  $(document).ready(function() {
+    $("#myid li").click(function() {
+      alert(this.id); // get id of clicked li
+    });
+  });
+</script>
 
 </body>
 </html>
