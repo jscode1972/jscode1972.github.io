@@ -54,15 +54,15 @@
 
 </div> <!-- wrapper end -->
   
-<div id="system"> system
+<div class="sheet" id="system"> system
 </div>
-<div id="download">download
+<div class="sheet" id="download">download
 </div>
-<div id="maintain">maintain
+<div class="sheet" id="maintain">maintain
 </div>
-<div id="history">history
+<div class="sheet" id="history">history
 </div>
-<div id="contact">contact
+<div class="sheet" id="contact">contact
 </div>
   
 <script type="text/javascript">        
@@ -71,9 +71,10 @@
       //alert(this.id); // get id of clicked li
       $("#nav li a").removeClass("selected")
       $(this).addClass("selected");
-      alert($(this).val()); 
-      alert($(this).attr("value")); 
+      // alert($(this).val());         // 此元素預設沒有 value
+      // alert($(this).attr("value")); // 但可用 attr("value") 
       alert($(this).text()); 
+      $("div.sheet").prop('disabled',true);
     });
   });
 </script>
