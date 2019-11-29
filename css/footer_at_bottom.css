@@ -31,15 +31,14 @@ body {
     box-sizing: border-box;
     /* 先上下後左右 = 置中的縮寫 */
     margin: 0 auto;
+    background-image: url(../banner.jpg);
 }
 
 #header H1 {
+    /* 可省略,已設定於 reset.css */
     display: block;
- /* 可省略,已設定於 reset.css */
-    width: 960px;
-    background-image: url(../banner.jpg);
+    /* 隱藏文字,往視窗外移動 */
     text-indent: -9999px;
-  /* 隱藏文字,往視窗外移動 */
 }
 
 /* ===== 主選單 ====== */
