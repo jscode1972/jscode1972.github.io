@@ -1,6 +1,12 @@
+@import url("reset.css");
+
 html, body {
     /* 設定body高度為100% 拉到視窗可視的大小 */
     height: 100%;
+}
+body {
+    background-color: #999;
+    font-family: arial,"微軟正黑體";
 }
 
 #wrapper {
@@ -11,24 +17,36 @@ html, body {
 }
 
 #header {
+    /* 展開 content 寬度 */
+    width: 100%;
+    /* 設定header的高度 */
+    height: 120px;
+    box-sizing: border-box;
+}
+
+#nav {
+    /* 展開 nav 寬度 */
+    width: 100%;
     /* 設定header的高度 */
     height: 40px;
     box-sizing: border-box;
 }
 
 #content {
+    /* 展開 content 寬度 */
+    width: 100%;
     /* 留出header及footer區塊的空間 */
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 #footer {
+    /* 展開footer寬度 */
+    width: 100%;
     /* 設定footer的高度 */
     height: 40px;
     box-sizing: border-box;
     /* 設定footer絕對位置在底部 */
     position: absolute;
     bottom: 0;
-    /* 展開footer寬度 */
-    width: 100%;
 }
