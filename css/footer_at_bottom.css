@@ -60,6 +60,10 @@ body {
     float: left;
 }
 
+#nav ul li.selected {
+   background-color: #red;
+}
+
 #nav ul li a {
     /* 超連結: 不能省略 */
     display: block;
