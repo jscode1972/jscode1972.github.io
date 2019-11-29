@@ -17,8 +17,9 @@ body {
     width: 960px;
     margin : 0 auto;
     /* 位置設為 relative, 作為footer區塊位置的參考 */
-    min-height: 100%;    /* 置底必須 */
+        /* min-height: 100%; 置底必須 */
     position: relative;  /* 置底必須 */
+    margin-bottom: -100px;
 }
 
 /* ===== 頁首區 ====== */
@@ -97,7 +98,6 @@ body {
     padding-bottom: 30px;
     
    /* margin-bottom : 50px; 無用 */
-    margin-bottom: -100px;
 }  
 
 #content p {
