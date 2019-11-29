@@ -1,15 +1,30 @@
 @import url("reset.css");
 
+html, body {
+    /* 設定body高度為100% 拉到視窗可視的大小 */
+    height: 100%;
+}
 body {
   background-color : #999;
   font-family : arial,"微軟正黑體";
 }
 
-/* ===== 頁首區 ====== */
+/* ===== 包裝區 ====== */
 
+#WRAPPER {
+    width : 960px;
+    /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+    min-height: 100%;
+    /* 位置設為relative, 作為footer區塊位置的參考 */
+    position: relative;
+}
+
+/* ===== 頁首區 ====== */
+/* box-sizing: border-box; */
 #HEADER {
-  width : 960px;
+  width : 100%;
   margin : 0 auto;  /* 先上下後左右 = 置中的縮寫 */
+
 }
 #HEADER H1 {
   display : block; /* 可省略,已設定於 reset.css */ 
@@ -22,7 +37,7 @@ body {
 /* ===== 主選單 ====== */
 
 #NAV {
-  width : 960px;
+  width : 100%;
   margin : 0 auto; 
   overflow : hidden; /* 避免此區高度受到 float 浮動的影響, hidden 如果用白話一點的解釋，就是將多出來的地方藏起來。 */
 }
@@ -51,7 +66,7 @@ body {
 
 #CONTENT {
   clear : both;             /* 解除浮動 */
-  width : 960px;            /* 不必預設高度, 預設即可 */
+  width : 100%;             /* 不必預設高度, 預設即可 */
   margin : 0 auto; 
   background-color : #fff;
   padding-top : 30px;       /* 內容與上方間隔 */
@@ -67,10 +82,14 @@ body {
 
 /* ===== 頁尾區 ====== */
 
-#FOOTER {
-  width : 960px;            /* 不必預設高度, 預設即可 */
+#FOOTER {  
+  width : width: 100%;     /* 展開footer寬度 */   
+  height: 40px;            /* 若要置底, 需設定footer的高度 */
   margin : 0 auto; 
   background-color : #000;
+  box-sizing: border-box;  /* 這是幹嘛的?? */
+  position: absolute;      /* 設定footer絕對位置在底部 */
+  bottom: 0;
 }
 #FOOTER H2 {
   font-size : 15px;
