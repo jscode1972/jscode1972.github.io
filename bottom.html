@@ -30,11 +30,11 @@
     
 <div id="nav">
   <ul>
-    <li><a href="#" value="s">系統說明</a></li>
-    <li><a href="#" value="d">下載專區</a></li>
-    <li><a href="#" value="m">資料維護</a></li>
-    <li><a href="#" value="h">更新紀錄</a></li>
-    <li><a href="#" value="c">聯絡方式</a></li>
+    <li><a href="#" value="system">系統說明</a></li>
+    <li><a href="#" value="download">下載專區</a></li>
+    <li><a href="#" value="maintain">資料維護</a></li>
+    <li><a href="#" value="history">更新紀錄</a></li>
+    <li><a href="#" value="contact">聯絡方式</a></li>
   </h1>
 </div> <!-- nav end -->
     
@@ -79,7 +79,8 @@
       // alert($(this).val());         // 此元素預設沒有 value
       // alert($(this).attr("value")); // 但可用 attr("value") 
       // alert($(this).text()); 
-      if ( $(this).text() == "s" ) {
+      $("div#content").html($("#"+$(this).attr("value")));
+      /*if ( $(this).text() == "s" ) {
         $("div#content").html($("#system"));
       } else if ( $(this).text() == "d" ) {
         $("div#content").html($("#download"));
@@ -89,7 +90,7 @@
         $("div#content").html($("#history"));  
       } else if ( $(this).text() == "c" ) {
         $("div#content").html($("#contact"));  
-      }
+      } */
     });
   });
 </script>
