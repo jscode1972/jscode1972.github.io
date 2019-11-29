@@ -56,9 +56,9 @@
   
 <script type="text/javascript">        
   $(document).ready(function() {
-    $("#nav li").click(function() {
+    $("#nav li a").click(function() {
       //alert(this.id); // get id of clicked li
-      $("#nav li").removeClass("selected")
+      $("#nav li a").removeClass("selected")
       $(this).addClass("selected");
     });
   });
