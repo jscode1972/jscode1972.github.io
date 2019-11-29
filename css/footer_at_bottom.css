@@ -36,7 +36,7 @@ body {
 }
 
 #content {
-    background-color: #FFFF00;
+    background-color: #FFFFFF;  /* 顏色同 wrapper, 就看不出來了 */
     /* 設定 content 的寬度 */
     width: 100%;
     /* 留出header及footer區塊的空間 */
