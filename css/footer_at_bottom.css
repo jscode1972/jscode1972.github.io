@@ -95,6 +95,8 @@ body {
     /* 留出 header, nav 及footer 區塊的上下間隔空間 */
     padding-top: 30px;
     padding-bottom: 30px;
+    
+    bottom: 40px;       
 }
 
 #content p {
