@@ -5,13 +5,13 @@ html, body {
     height: 100%;
 }
 body {
-    background-color: #FF0000;
+    background-color: #000000;
     font-family: arial,"微軟正黑體";
 }
 
 #wrapper {
     width: 960px;
-    background-color: #00FF00;
+    background-color: #FF0000;
     /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
     min-height: 100%;
     /* 位置設為relative, 作為footer區塊位置的參考 */
@@ -21,14 +21,14 @@ body {
 #header {
     /* 展開 content 寬度 */
     width: 100%;
-    background-color: #0000FF;
+    background-color: #00FF00;
     /* 設定header的高度 */
     height: 120px;
     box-sizing: border-box;
 }
 
 #nav {
-    background-color: #111;
+    background-color: #0000FF;
     /* 展開 nav 寬度 */
     width: 100%;
     /* 設定header的高度 */
@@ -37,7 +37,7 @@ body {
 }
 
 #content {
-    background-color: #888;
+    background-color: #FFFF00;
     /* 展開 content 寬度 */
     width: 100%;
     /* 留出header及footer區塊的空間 */
@@ -46,6 +46,7 @@ body {
 }
 
 #footer {
+    background-color: #00FFFF;
     /* 展開footer寬度 */
     width: 100%;
     /* 設定footer的高度 */
