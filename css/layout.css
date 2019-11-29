@@ -34,7 +34,7 @@ body {
 #NAV ul li a {
   display : block;      /* 超連結: 不能省略 */
   width : 192px;        /* 五個平均分配 */
-  height : 50px;
+  height : 40px;
   line-height : 50px;   /* 文字高度置中 */
   background-color : #000;
   font-size : 15px;
@@ -50,13 +50,31 @@ body {
 /* ===== 內容區 ====== */
 
 #CONTENT {
-  width : 960px;
+  clear : both;             /* 解除浮動 */
+  width : 960px;            /* 不必預設高度, 預設即可 */
+  margin : 0 auto; 
+  background-color : #fff;
+  padding-top : 30px;       /* 內容與上方間隔 */
+  padding-bottom : 30px;    /* 內容與下方間隔 */
 }
-#CONTENT p {}
+#CONTENT p {
+  text-indent : 50px;       /* 文字段落縮排 */
+  font-size : 15px;
+  line-height : 1.7;
+  padding : 0 30px;         /* 左右各留 30px, 編排上視覺比較舒服 */
+  padding-bottom : 15px;    /* 不同段落之間做區隔 */
+}
 
 /* ===== 頁尾區 ====== */
 
 #FOOTER {
-  width : 960px;
+  width : 960px;            /* 不必預設高度, 預設即可 */
+  margin : 0 auto; 
+  background-color : #000;
 }
-#FOOTER H2 {}
+#FOOTER H2 {
+  font-size : 15px;
+  text-align : center;
+  line-height : 50px;
+  color : #fff;
+}
