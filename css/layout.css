@@ -11,7 +11,6 @@ body {
   width : 960px;
   margin : 0 auto;  /* 先上下後左右 = 置中的縮寫 */
 }
-
 #HEADER H1 {
   display : block; /* 可省略,已設定於 reset.css */ 
   width : 960px;
@@ -22,18 +21,41 @@ body {
 
 /* ===== 主選單 ====== */
 
-#NAV {}
-#NAV ul {}
-#NAV ul li {}
-#NAV ul li a {}
-#NAV ul li a:hover {}
+#NAV {
+  width : 960px;
+  margin : 0 auto; 
+  overflow : hidden; /* 避免此區高度受到 float 浮動的影響, hidden 如果用白話一點的解釋，就是將多出來的地方藏起來。 */
+}
+#NAV ul {
+}
+#NAV ul li {
+  float : left; /* 水平排列, 寫在 li */
+}
+#NAV ul li a {
+  display : block;      /* 超連結: 不能省略 */
+  width : 192px;        /* 五個平均分配 */
+  height : 50px;
+  line-height : 50px;   /* 文字高度置中 */
+  font-size : 15px;
+  color : #FFF;
+  letter-spacing : 2px;
+  text-align : center;  /* 文字水平置中 */
+  text-decoration : none;
+}
+#NAV ul li a:hover {
+  background-color : #993366;
+}
 
 /* ===== 內容區 ====== */
 
-#CONTENT {}
+#CONTENT {
+  width : 960px;
+}
 #CONTENT p {}
 
 /* ===== 頁尾區 ====== */
 
-#FOOTER {}
+#FOOTER {
+  width : 960px;
+}
 #FOOTER H2 {}
