@@ -60,10 +60,6 @@ body {
     float: left;
 }
 
-#nav ul li.selected {
-   background-color: #ff0000;
-}
-
 #nav ul li a {
     /* 超連結: 不能省略 */
     display: block;
@@ -83,6 +79,10 @@ body {
 
 #nav ul li a:hover {
     background-color: #993366;
+}
+
+#nav ul li a.selected {
+   background-color: #ff0000;
 }
 
 /* ===== 內容區 ====== */
