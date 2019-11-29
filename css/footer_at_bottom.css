@@ -13,10 +13,10 @@ body {
     background-color: #FFFFFF;
     /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
     width: 960px;
-    min-height: 100%;
     margin : 0 auto;
-    /* 位置設為relative, 作為footer區塊位置的參考 */
-    position: relative;
+    /* 位置設為 relative, 作為footer區塊位置的參考 */
+    min-height: 100%;    /* 置底必須 */
+    position: relative;  /* 置底必須 */
 }
 
 #header {
@@ -50,7 +50,7 @@ body {
     width: 100%;
     height: 40px;
     box-sizing: border-box;
-    /* 設定footer絕對位置在底部 */
-    position: absolute;
-    bottom: 0;
+    /* 設定 footer 絕對位置在底部 */
+    position: absolute; /* 置底必須 */
+    bottom: 0;          /* 置底必須 */
 }
