@@ -78,9 +78,18 @@
       $(this).addClass("selected");
       // alert($(this).val());         // 此元素預設沒有 value
       // alert($(this).attr("value")); // 但可用 attr("value") 
-      alert($(this).text()); 
-      //$("div.sheet").prop('disabled',true);
-      $("div#content").html($("#system"));
+      // alert($(this).text()); 
+      if ( $(this).text() == "s" ) {
+        $("div#content").html($("#system"));
+      } else if ( $(this).text() == "d" ) {
+        $("div#content").html($("#download"));
+      } else if ( $(this).text() == "m" ) {
+        $("div#content").html($("#maintain"));  
+      } else if ( $(this).text() == "h" ) {
+        $("div#content").html($("#history"));  
+      } else if ( $(this).text() == "c" ) {
+        $("div#content").html($("#contact"));  
+      }
     });
   });
 </script>
