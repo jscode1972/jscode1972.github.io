@@ -61,6 +61,27 @@ body {
     float: left;
 }
 
+#nav ul li a {
+    /* 超連結: 不能省略 */
+    display: block;
+    /* 五個平均分配寬度 */
+    width: 192px;
+    height: 40px;
+    /* 文字高度置中 */
+    line-height: 50px;
+    background-color: #000;
+    color: #FFF;
+    font-size: 15px;
+    letter-spacing: 2px;  
+    /* 文字水平置中 */
+    text-align: center;
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    background-color: #993366;
+}
+
 /* ===== 內容區 ====== */
 
 /*   clear : both;      解除浮動 */
