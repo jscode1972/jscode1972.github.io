@@ -83,7 +83,6 @@ body {
   width : width: 100%;     /* 展開footer寬度 */   
   height: 40px;            /* 若要置底, 需設定footer的高度 */
   background-color : #000;
-  box-sizing: border-box;  /* 這是幹嘛的?? */
   position: absolute;      /* 設定footer絕對位置在底部 */
   bottom: 0;
 }
