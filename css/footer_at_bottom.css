@@ -33,6 +33,15 @@ body {
     margin: 0 auto;
 }
 
+#header H1 {
+    display: block;
+ /* 可省略,已設定於 reset.css */
+    width: 960px;
+    background-image: url(../banner.jpg);
+    text-indent: -9999px;
+  /* 隱藏文字,往視窗外移動 */
+}
+
 /* ===== 主選單 ====== */
 
 #nav {
