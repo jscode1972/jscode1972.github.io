@@ -30,11 +30,11 @@
     
 <div id="nav">
   <ul>
-    <li><a href="#">AAA</a></li>
-    <li><a href="#">BBB</a></li>
-    <li><a href="#">CCC</a></li>
-    <li><a href="#">DDD</a></li>
-    <li><a href="#">EEE</a></li>
+    <li><a href="#" id="system">系統說明</a></li>
+    <li><a href="#" id="download">下載專區</a></li>
+    <li><a href="#" id="maintain">系統維護</a></li>
+    <li><a href="#" id="history">更新紀錄</a></li>
+    <li><a href="#" id="contact">聯絡方式</a></li>
   </h1>
 </div> <!-- nav end -->
     
@@ -60,6 +60,7 @@
       //alert(this.id); // get id of clicked li
       $("#nav li a").removeClass("selected")
       $(this).addClass("selected");
+      alert(this.id); 
     });
   });
 </script>
