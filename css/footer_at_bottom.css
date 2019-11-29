@@ -121,7 +121,7 @@ body {
     height: 40px;
     box-sizing: border-box;
     /* 設定 footer 絕對位置在底部 */
-    position: absolute; /* 置底必須 */
+    position: fixed; /* 置底必須 absolute */
     bottom: 0;          /* 置底必須 */
 }
 
