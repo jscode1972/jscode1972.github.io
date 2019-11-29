@@ -25,6 +25,7 @@ body {
 }
 
 #nav {
+    background-color: #111;
     /* 展開 nav 寬度 */
     width: 100%;
     /* 設定header的高度 */
@@ -33,6 +34,7 @@ body {
 }
 
 #content {
+    background-color: #888;
     /* 展開 content 寬度 */
     width: 100%;
     /* 留出header及footer區塊的空間 */
