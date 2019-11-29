@@ -1,0 +1,39 @@
+@import url("reset.css");
+
+body {
+  background-color : #999;
+  font-family : arial,"微軟正黑體";
+}
+
+/* ===== 頁首區 ====== */
+
+#HEADER {
+  width : 960px;
+  margin : 0 auto;  /* 先上下後左右 = 置中的縮寫 */
+}
+
+#HEADER H1 {
+  display : block; /* 可省略,已設定於 reset.css */ 
+  width : 960px;
+  height : 120px;
+  background-image : url(../images/banner.jpg);
+  text-indent : -9999px;  /* 隱藏文字,往視窗外移動 */
+}
+
+/* ===== 主選單 ====== */
+
+#NAV {}
+#NAV ul {}
+#NAV ul li {}
+#NAV ul li a {}
+#NAV ul li a:hover {}
+
+/* ===== 內容區 ====== */
+
+#CONTENT {}
+#CONTENT p {}
+
+/* ===== 頁尾區 ====== */
+
+#FOOTER {}
+#FOOTER H2 {}
