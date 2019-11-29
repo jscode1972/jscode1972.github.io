@@ -96,8 +96,8 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     
-    margin-bottom : 50px;
-}
+   /* margin-bottom : 50px; 無用 */
+}  
 
 #content p {
     /* 文字段落縮排 */
