@@ -97,6 +97,7 @@ body {
     padding-bottom: 30px;
     
    /* margin-bottom : 50px; 無用 */
+    margin-bottom: -100px;
 }  
 
 #content p {
