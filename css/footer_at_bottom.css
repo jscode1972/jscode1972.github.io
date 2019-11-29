@@ -15,6 +15,7 @@ body {
     background-color: #FFFFFF;
     /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
     width: 960px;
+    margin : 0 auto;
     /* 位置設為 relative, 作為footer區塊位置的參考 */
     min-height: 100%;    /*  置底必須 */
     position: relative;  /* 置底必須 */
