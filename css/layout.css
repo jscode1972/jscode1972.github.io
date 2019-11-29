@@ -62,9 +62,8 @@ body {
 }
 
 /* ===== 內容區 ====== */
-
+/*   clear : both;      解除浮動 */
 #CONTENT {
-  clear : both;             /* 解除浮動 */
   width : 100%;             /* 不必預設高度, 預設即可 */
   background-color : #fff;
   padding-top : 30px;       /* 內容與上方間隔 */
