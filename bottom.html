@@ -30,11 +30,11 @@
     
 <div id="nav">
   <ul>
-    <li><a href="#" id="system">系統說明</a></li>
-    <li><a href="#" id="download">下載專區</a></li>
-    <li><a href="#" id="maintain">系統維護</a></li>
-    <li><a href="#" id="history">更新紀錄</a></li>
-    <li><a href="#" id="contact">聯絡方式</a></li>
+    <li><a href="#">系統說明</a></li>
+    <li><a href="#">下載專區</a></li>
+    <li><a href="#">系統維護</a></li>
+    <li><a href="#">更新紀錄</a></li>
+    <li><a href="#">聯絡方式</a></li>
   </h1>
 </div> <!-- nav end -->
     
@@ -44,15 +44,26 @@
   <p> <a href="http://www.flycan.com/article/css/css-sprite-ul-li-1953.html">CSS Sprite 教學 – 條例式按鈕設計</a></p>
   <p> <a href="http://www.flycan.com/article/css/reset-css-562.html">Reset CSS 重置歸零 – 網頁排版各瀏覽器快速一致化</a></p>
   <p> <a href="https://www.imagefu.com/create/button">線上按鈕設計</a></p>
-  <p> <a href="https://yichen0831.wordpress.com/2013/08/19/html%E5%B0%87footer%E7%BD%AE%E5%BA%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%BF%E7%94%A8css/">頁尾置底</a></p>
-
+  <p> <a href="https://yichen0831.wordpress.com/2013/08/19/html%E5%B0%87footer%E7%BD%AE%E5%BA%95%E7%9A%84%E6%96%B9%E6%B3%95%E4%BD%BF%E7%94%A8css/">頁尾置底</a></p> 
+  
 </div> <!-- content end -->
     
 <footer id="footer">
-        <h2>版權宣告 ( <a href="https://matthewjamestaylor.com/bottom-footer">頁尾如何置底<a> )</h2>
+  <h2>版權宣告 ( <a href="https://matthewjamestaylor.com/bottom-footer">頁尾如何置底<a> )</h2>
 </footer> <!-- footer end -->
 
 </div> <!-- wrapper end -->
+  
+<div id="system"> system
+</div>
+<div id="download">download
+</div>
+<div id="maintain">maintain
+</div>
+<div id="history">history
+</div>
+<div id="contact">contact
+</div>
   
 <script type="text/javascript">        
   $(document).ready(function() {
@@ -60,7 +71,7 @@
       //alert(this.id); // get id of clicked li
       $("#nav li a").removeClass("selected")
       $(this).addClass("selected");
-      alert(this.id); 
+      alert(this.val()); 
     });
   });
 </script>
