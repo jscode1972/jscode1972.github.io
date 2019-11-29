@@ -45,6 +45,13 @@ body {
     overflow: hidden;
 }
 
+#nav ul { }
+
+#nav ul li {
+    /* 水平排列, 寫在 li */
+    float: left;
+}
+
 /* ===== 內容區 ====== */
 
 /*   clear : both;      解除浮動 */
