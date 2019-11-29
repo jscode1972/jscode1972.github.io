@@ -18,7 +18,6 @@ body {
     margin : 0 auto;
     /* 位置設為 relative, 作為footer區塊位置的參考 */
     min-height: 100%;    /*  置底必須 */
-    max-height: 100%;    /*  置底必須 */
     position: relative;  /* 置底必須 */
 }
 
