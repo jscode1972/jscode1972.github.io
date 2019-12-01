@@ -1,7 +1,7 @@
 @import url("reset.css");
 
 html, body {
-    /* 設定body高度為100% 拉到視窗可視的大小 */
+    /* 設定body高度為100% 拉到視窗可視的大小, 所謂 100% 是相對於瀏覽器 */
     height: 100%;
 }
 body {
