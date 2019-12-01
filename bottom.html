@@ -30,7 +30,7 @@
 </head>
 <body>
   
-<div class="wrapper">
+<div id="wrapper">
   
 <div id="header">
   <h1>標題測試</h1>
@@ -104,7 +104,7 @@
 </div> <!-- wrapper end -->
   
 <div id="mask">
-  <div class="wrapper">
+  <div>
     <div id="pophead">
        pophead
     </div>
@@ -134,7 +134,6 @@
       var c = "#"+$(this).attr("value");
       $(c).show();
       $("div#mask").show();
-      $("div#popup").show();
     });
   });
 </script>
