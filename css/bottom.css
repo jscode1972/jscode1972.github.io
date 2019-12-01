@@ -153,7 +153,6 @@ body {
     bottom: 0;
     left : 0;
     right : 0;
-     margin : 0 auto;
     z-index : 9;
     /* 背景 */
     background-color: blue;
@@ -161,6 +160,11 @@ body {
 
 #popup {
     box-sizing: border-box; 
+    position: fixed; 
+    top : 30px;
+    bottom: 30px;
+    left : 100px;
+    right : 100px;
     /* 背景 */
     background-color: green; 
 }
