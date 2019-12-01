@@ -160,15 +160,18 @@ body {
 
 #popup {
     box-sizing: border-box; 
-    position: fixed; 
-    top : 30px;
-    bottom: 30px;
-    left : 100px;
-    right : 100px;
+    width : 500px;
+    height : 300px;
     /* 背景 */
     background-color: green; 
 }
+#pophead {
+    width : 500px;
+    height : 30px;
+}
 #popfoot {
+    width : 500px;
+    height : 30px;
     position: absolute; 
     bottom: 0;   
 }
