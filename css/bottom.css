@@ -155,7 +155,8 @@ body {
     right : 0;
     z-index : 9;
     /* 背景 */
-    background-color: blue;
+    background-color: #707070;
+    opacity: 0.5;   
 }
 
 #popup {
