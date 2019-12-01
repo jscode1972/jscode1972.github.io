@@ -101,6 +101,9 @@
   <h2>版權宣告 ( <a href="https://matthewjamestaylor.com/bottom-footer">頁尾如何置底<a> )</h2>
 </div> <!-- footer end -->
 
+<div id="mask">
+</div>
+
 </div> <!-- wrapper end -->
   
 <script type="text/javascript">        
@@ -115,6 +118,7 @@
       $("div.sheet").hide();
       var c = "#"+$(this).attr("value");
       $(c).show();
+      $("div#mask").show();
     });
   });
 </script>
