@@ -153,6 +153,18 @@ body {
     bottom: 0;
     left : 0;
     right : 0;
-    z-index : 99;
+    z-index : 9;
+    /* 背景 */
     background-color: blue;
+}
+
+#popup {
+    box-sizing: border-box; 
+    display : none;
+    /* 設定 footer 的寬度 & 高度 */
+    width: 450px;
+    height: 50%;
+    z-index : 99;
+    /* 背景 */
+    background-color: green; 
 }
