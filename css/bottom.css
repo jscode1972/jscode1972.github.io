@@ -11,7 +11,7 @@ body {
 
 /* ===== 容器區 ====== */
 
-.wrapper {
+#wrapper {
     /* box-sizing: border-box; */
     /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
     width: 960px;
