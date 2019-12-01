@@ -12,25 +12,28 @@ body {
 /* ===== 容器區 ====== */
 
 #wrapper {
-    background-color: #FFFFFF;
+    /* box-sizing: border-box; */
     /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
     width: 960px;
+    min-height: 100%;  
+    /* 先上下後左右 = 置中的縮寫 */
     margin : 0 auto;
-    /* 位置設為 relative, 作為footer區塊位置的參考 */
-    min-height: 100%;    /*  置底必須 */
-    position: relative;  /* 置底必須 */
+    /* 底色 */
+    background-color: #FFFFFF;
 }
 
 /* ===== 頁首區 ====== */
 
 #header {
-    background-color: #00FF00;
+    box-sizing: border-box; 
     /* 設定 header 的寬度 & 高度 */
-    width: 100%;
+    width: 960px;
     height: 120px;
-    box-sizing: border-box;
-    /* 先上下後左右 = 置中的縮寫 */
-    margin: 0 auto;
+    /* 設定位置 */
+    position : fixed;
+    top : 0;
+     /* 底色 */
+    background-color: #FF0000;
     background-image: url(../banner.jpg);
 }
 
@@ -44,13 +47,15 @@ body {
 /* ===== 主選單 ====== */
 
 #nav {
-    background-color: #000;
+    box-sizing: border-box; 
     /* 設定 nav 的寬度 & 高度 */
-    width: 100%;
+    width: 960px;
     height: 40px;
-    box-sizing: border-box;
-    /* 避免此區高度受到 float 浮動的影響, hidden 如果用白話一點的解釋，就是將多出來的地方藏起來。 */
-    overflow: hidden;
+    /* 設定位置 */
+    position : fixed;
+    top : 120px;
+    /* 底色 */
+    background-color: #00FF00;
 }
 
 #nav ul { }
@@ -89,14 +94,19 @@ body {
 
 /*   clear : both;      解除浮動 */
 #content {
-    background-color: #FFFFFF;  /* 顏色同 wrapper, 就看不出來了 */
+    /* box-sizing: border-box; */
     /* 設定 content 的寬度 */
-    width: 100%;
-    /* 留出 header, nav 及footer 區塊的上下間隔空間 */
-    padding-top: 30px;
-    padding-bottom: 30px;
-    
-   /* margin-bottom : 50px; 無用 */
+    width: 960px;
+    /* 設定位置 */
+    /* position : fixed; */
+    /* top : 120px; */
+    /* 留出 header, nav 及 footer 區塊的上下間隔空間 */
+    margin-top : 160px;
+    margin-bottom : 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* 顏色同 wrapper, 就看不出來了 */
+    background-color: #FFFFFF;
 }  
 
 #content p {
@@ -108,20 +118,20 @@ body {
     padding: 0 30px;
     /* 不同段落之間做區隔 */
     padding-bottom: 15px;
-
 }
 
 /* ===== 頁尾區 ====== */
 
 #footer {
-    background-color: #000;
+    box-sizing: border-box; 
     /* 設定 footer 的寬度 & 高度 */
-    width: 100%;
+    width: 960px;
     height: 40px;
-    box-sizing: border-box;
     /* 設定 footer 絕對位置在底部 */
-    position: absolute; /* 置底必須  */
-    bottom: 0;          /* 置底必須 */
+    position: fixed; 
+    bottom: 0;         
+    /* 底色 */
+    background-color: #000;
 }
 
 #footer H2 {
