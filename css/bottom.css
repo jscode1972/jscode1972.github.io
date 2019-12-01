@@ -160,11 +160,7 @@ body {
 
 #popup {
     box-sizing: border-box; 
-    display : none;
-    /* 設定 footer 的寬度 & 高度 */
-    width: 450px;
-    height: 50%;
-    z-index : 99;
+    margin : 0 auto;
     /* 背景 */
     background-color: green; 
 }
