@@ -152,9 +152,10 @@ body {
     opacity : 0.5;
     display : none;
 }
-#popup {
+#pop {
     height : 200px;
     width : 400px;
-    z-index : 100;
+    z-index : 999;
     background-color: #ffffff;
+    display : none;
 }
