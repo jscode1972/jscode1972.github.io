@@ -16,7 +16,7 @@
   <title>Title of the document</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/bottom.css?1129831332" >
+  <link rel="stylesheet" type="text/css" href="css/bottom.css?11298131332" >
     
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
           integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
@@ -85,6 +85,8 @@
 <div id="mask"></div>
 <div id="xxx">
   popup : <input type="text" value="ha">
+  <button type="button" id="save">Save</button>
+  <button type="button" id="exit">Exit</button>
 </div>  
 
 </div> <!-- wrapper end -->
@@ -104,6 +106,14 @@
       $(c).show();
       $("div#mask").show();
       $("div#xxx").show();
+    });
+    $("#save").click(function() {
+      $("div#mask").hide();
+      $("div#xxx").hide();
+    });
+    $("#exit").click(function() {
+      $("div#mask").hide();
+      $("div#xxx").hide();
     });
   });
 </script>
