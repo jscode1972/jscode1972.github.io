@@ -69,7 +69,8 @@
 
 <div class="container">
   <h2>Bordered Table</h2>
-  <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>            
+  <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>      
+  <button type="button" id="load">Load</button>
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -78,33 +79,19 @@
         <th>Email</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
+    <tbody id="data">
+
     </tbody>
   </table>
 </div>
   </div>
 
   <div id="history" class="sheet" style="display:none">
-   history
+     history
   </div>
 
   <div class="sheet" id="contact" style="display:none;">
-      contact
+    contact
   </div>
 
 </div> <!-- content end -->
@@ -145,6 +132,9 @@
     $("#exit").click(function() {
       $("div#mask").hide();
       $("div#xxx").hide();
+    });
+    $("#load").click(function() {
+      $('#data tr:last').after('<tr>a</tr><tr>b</tr><tr>c</tr>');
     });
   });
 </script>
