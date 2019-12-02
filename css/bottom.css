@@ -122,7 +122,7 @@ body {
 
 /* ===== 頁尾區 ====== */
 
-footer {
+FOOTER {
     box-sizing: border-box; 
     /* 設定 footer 的寬度 & 高度 */
     width: 960px;
@@ -134,7 +134,7 @@ footer {
     background-color: #000;
 }
 
-footer H2 {
+FOOTER H2 {
     font-size: 14px;
     text-align: center;
     line-height: 40px;
