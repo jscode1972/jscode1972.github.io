@@ -24,7 +24,7 @@ body {
 
 /* ===== 頁首區 ====== */
 
-#header {
+header {
     box-sizing: border-box; 
     /* 設定 header 的寬度 & 高度 */
     width: 960px;
@@ -37,7 +37,7 @@ body {
     background-image: url(../banner.jpg);
 }
 
-#header H1 {
+header H1 {
     /* 可省略,已設定於 reset.css */
     display: block;
     /* 隱藏文字,往視窗外移動 */
@@ -46,7 +46,7 @@ body {
 
 /* ===== 主選單 ====== */
 
-#nav {
+nav {
     box-sizing: border-box; 
     /* 設定 nav 的寬度 & 高度 */
     width: 960px;
@@ -58,14 +58,14 @@ body {
     background-color: #00FF00;
 }
 
-#nav ul { }
+nav ul { }
 
-#nav ul li {
+nav ul li {
     /* 水平排列, 寫在 li */
     float: left;
 }
 
-#nav ul li a {
+nav ul li a {
     /* 超連結: 不能省略 */
     display: block;
     /* 五個平均分配寬度 */
@@ -82,18 +82,18 @@ body {
     text-decoration: none;
 }
 
-#nav ul li a:hover {
+nav ul li a:hover {
     background-color: #993366;
 }
 
-#nav ul li a.selected {
+nav ul li a.selected {
    background-color: #ff0000;
 }
 
 /* ===== 內容區 ====== */
 
 /*   clear : both;      解除浮動 */
-#content {
+content {
     /* box-sizing: border-box; */
     /* 設定 content 的寬度 */
     width: 960px;
@@ -109,7 +109,7 @@ body {
     background-color: #FFFFFF;
 }  
 
-#content p {
+content p {
     /* 文字段落縮排 */
     text-indent: 50px;
     font-size: 15px;
@@ -122,7 +122,7 @@ body {
 
 /* ===== 頁尾區 ====== */
 
-FOOTER {
+footer {
     box-sizing: border-box; 
     /* 設定 footer 的寬度 & 高度 */
     width: 960px;
@@ -134,7 +134,7 @@ FOOTER {
     background-color: #000;
 }
 
-FOOTER H2 {
+footer H2 {
     font-size: 14px;
     text-align: center;
     line-height: 40px;
