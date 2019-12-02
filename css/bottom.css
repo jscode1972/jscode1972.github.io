@@ -93,7 +93,8 @@ nav ul li a.selected {
 /* ===== 內容區 ====== */
 
 /*   clear : both;      解除浮動 */
-section {
+#content {
+    clear : both; 
     /* box-sizing: border-box; */
     /* 設定 content 的寬度 */
     width: 960px;
@@ -109,7 +110,7 @@ section {
     background-color: #FFFFFF;
 }  
 
-section p {
+#content p {
     /* 文字段落縮排 */
     text-indent: 50px;
     font-size: 15px;
