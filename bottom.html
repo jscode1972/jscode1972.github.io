@@ -188,9 +188,9 @@
   
 <script type="text/javascript">        
   $(document).ready(function() {
-    $("#nav li a").click(function() {
+    $("nav li a").click(function() {
       //alert(this.id); // get id of clicked li
-      $("#nav li a").removeClass("selected")
+      $("nav li a").removeClass("selected")
       $(this).addClass("selected");
       // alert($(this).val());         // 此元素預設沒有 value
       // alert($(this).attr("value")); // 但可用 attr("value") 
