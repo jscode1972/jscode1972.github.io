@@ -28,7 +28,7 @@ header {
     box-sizing: border-box; 
     /* 設定 header 的寬度 & 高度 */
     width: 960px;
-    height: 120px;
+    height: 160px;
     /* 設定位置 */
     position : fixed;
     top : 0;
@@ -52,8 +52,8 @@ nav {
     width: 960px;
     height: 40px;
     /* 設定位置 */
-    position : fixed;
-    top : 120px;
+    position : absolute;
+    bottom : 120px;
     /* 底色 */
     background-color: #00FF00;
 }
