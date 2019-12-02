@@ -73,11 +73,13 @@
   <table id="data" class="table table-bordered">
     <thead>
       <tr>
-        <th rowspan="2">Eng Server</th>
+        <th colspan="2">Eng Server</th>
         <th colspan="2">Local</th>
         <th colspan="2">Remote</th>
       </tr>
       <tr>
+        <th>Eng Server</th>
+        <th>Edit</th>
         <th>Local Path</th>
         <th>File Extension</th>
         <th>System</th>
@@ -87,6 +89,7 @@
     <tbody>
       <tr>
         <td>SERVER01</td>
+        <td><button type="button"></button></td>
         <td>D:\SYS\Tool01\</td>
         <td>*.map</td>
         <td>CRM</td>
@@ -146,7 +149,9 @@
     });
     $("#load").click(function() {
       //$('#data tr:last').after('<tr><td>a</td><td>b</td><td>c</td></tr>');
-      $('#data tbody').append('<tr><td>SERVER01</td><td>D:&bsol;SYS&bsol;Tool02&bsol;</td><td>*.map</td><td>CRM</td><td>SITE&bsol;Tool02</td></tr>');
+      $('#data tbody').append('<tr><td>SERVER01</td><td><button type="button"></button></td>' +
+                              '<td>D:&bsol;SYS&bsol;Tool02&bsol;</td><td>*.map</td><td>CRM</td>'+
+                              '<td>SITE&bsol;Tool02</td></tr>');
     });
   });
 </script>
