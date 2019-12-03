@@ -53,7 +53,7 @@ nav {
     height: 40px;
     /* 設定位置 */
     position : absolute;
-    bottom : 120px;
+    bottom : 0;
     /* 底色 */
     background-color: #00FF00;
 }
