@@ -34,6 +34,7 @@ header {
     top : 0;
      /* 底色 */
     background-color: #FF0000;
+    background-image: url(../banner.jpg);
 }
 
 header H1 {
@@ -41,7 +42,6 @@ header H1 {
     display: block;
     /* 隱藏文字,往視窗外移動 */
     text-indent: -9999px;
-    background-image: url(../banner.jpg);
 }
 
 /* ===== 主選單 ====== */
